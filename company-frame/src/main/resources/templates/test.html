@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <style type="text/css">
+
+
+    </style>
+</head>
+<body>
+<div class="layui-carousel carousel"    lay-filter="carousel" id="carousel">
+    <div carousel-item="">
+        <div><img src="/images/seikiro.png"></div>
+        <div><img src="/images/background1.png"></div>
+    </div>
+
+    <div class="layui-container login">
+        <form id="loginForm" action="/user/login" class="layui-form" method="post",layui-form-pane>
+            <input name="type" type="hidden" value="1">
+            <input type="text" name="username" lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input"><br>
+            <input type="text" name="password" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input"><br>
+            <a class="layui-btn layui-btn-normal" lay-filter="submit" lay-submit="" id="submit">登录</a>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>
